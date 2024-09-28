@@ -79,19 +79,24 @@ body {
   color: #ff5151;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 18px;
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+}
+
+.errorcaught .error-msg{
+  display: block;
 }
 .goal-container {
   border-radius: 17px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 30px;
   width: 570px;
   height: 82px;
   display: flex;
   align-items: center;
   padding: 0 22px;
-  gap: 20px;
   background-color: #ffff;
 }
 .custom-checkbox {
@@ -100,6 +105,12 @@ body {
   border: 2px solid rgba(97, 72, 28, 0.3);
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tick-img {
+  display: none;
 }
 .input-field {
   font-family: inherit;
@@ -107,8 +118,38 @@ body {
   outline: none;
   font-size: 16px;
   font-weight: 500;
+  width: 100%;
+  padding-left: 22px;
+  height: 100%;
 }
 .input-field::placeholder {
   color: #d9d9d9;
 }
 
+.quote {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 45px;
+}
+.footer-text {
+  color: #858585;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+.completed .custom-checkbox {
+  background-color: #48a300;
+  border: 2px solid #48a300;
+}
+.completed .tick-img {
+  display: block;
+}
+.completed .input-field {
+  color: #48a300;
+  text-decoration-line: line-through;
+  font-size: 16px;
+  font-weight: 500;
+}
