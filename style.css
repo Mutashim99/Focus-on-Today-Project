@@ -33,6 +33,7 @@ body {
 .subtitle {
   display: flex;
   gap: 14px;
+  align-items: center;
 }
 .subtitle h2 {
   color: #000;
